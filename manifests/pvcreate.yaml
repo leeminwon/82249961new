@@ -3,6 +3,8 @@ apiVersion: v1
 metadata:
   name: pv82249961new
 spec:
+  csi:
+    driver: file.csi.azure.com
   capacity:
     storage: 1Gi
   accessModes:

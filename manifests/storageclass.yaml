@@ -10,4 +10,3 @@ spec:
     requests:
       storage: 1Gi
   storageClassName: cepg-aa-std-rwmany
-  volumeMode: Filesystem

@@ -4,6 +4,8 @@ metadata:
   name: prod-cepg-aa-std-pvc
   namespace: '82249961new’
 spec:
+  csi:
+    driver: file.csi.azure.com
   accessModes:
     - ReadWriteMany
   resources:

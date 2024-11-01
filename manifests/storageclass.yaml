@@ -2,7 +2,7 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: prod-cepg-aa-std-pvc
-  namespace: '82249961new’
+  namespace: 82249961new
 spec:
   accessModes:
     - ReadWriteMany

@@ -1,0 +1,84 @@
+
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: prod-cepg-aa-std-pvc
+  namespace: '82249961'
+  uid: 0af37812-1045-450e-ab02-cbd7ec565fd6
+  resourceVersion: '3341475'
+  creationTimestamp: '2024-10-30T05:21:52Z'
+  labels:
+    app.kubernetes.io/instance: a82249961
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: >
+      {"apiVersion":"v1","kind":"PersistentVolumeClaim","metadata":{"annotations":{},"labels":{"app.kubernetes.io/instance":"a82249961"},"name":"prod-cepg-aa-std-pvc","namespace":"82249961"},"spec":{"accessModes":["ReadWriteMany"],"resources":{"requests":{"storage":"1Gi"}},"storageClassName":"cepg-aa-std-rwmany"}}
+    pv.kubernetes.io/bind-completed: 'yes'
+    pv.kubernetes.io/bound-by-controller: 'yes'
+    volume.beta.kubernetes.io/storage-provisioner: file.csi.azure.com
+    volume.kubernetes.io/storage-provisioner: file.csi.azure.com
+  finalizers:
+    - kubernetes.io/pvc-protection
+  managedFields:
+    - manager: argocd-controller
+      operation: Update
+      apiVersion: v1
+      time: '2024-10-30T05:21:52Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+          f:labels:
+            .: {}
+            f:app.kubernetes.io/instance: {}
+        f:spec:
+          f:accessModes: {}
+          f:resources:
+            f:requests:
+              .: {}
+              f:storage: {}
+          f:storageClassName: {}
+          f:volumeMode: {}
+    - manager: kube-controller-manager
+      operation: Update
+      apiVersion: v1
+      time: '2024-10-30T05:21:53Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            f:pv.kubernetes.io/bind-completed: {}
+            f:pv.kubernetes.io/bound-by-controller: {}
+            f:volume.beta.kubernetes.io/storage-provisioner: {}
+            f:volume.kubernetes.io/storage-provisioner: {}
+        f:spec:
+          f:volumeName: {}
+    - manager: kube-controller-manager
+      operation: Update
+      apiVersion: v1
+      time: '2024-10-30T05:21:53Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:accessModes: {}
+          f:capacity:
+            .: {}
+            f:storage: {}
+          f:phase: {}
+      subresource: status
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  volumeName: pvc-0af37812-1045-450e-ab02-cbd7ec565fd6
+  storageClassName: cepg-aa-std-rwmany
+  volumeMode: Filesystem
+status:
+  phase: Bound
+  accessModes:
+    - ReadWriteMany
+  capacity:
+    storage: 1Gi

@@ -1,99 +1,15 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: pvc-0af37812-1045-450e-ab02-cbd7ec565fd6
-  uid: 303fcccf-203c-4361-bd3a-9aa8dcb5f3a2
-  resourceVersion: '3341476'
-  creationTimestamp: '2024-10-30T05:21:53Z'
-  annotations:
-    pv.kubernetes.io/provisioned-by: file.csi.azure.com
-    volume.kubernetes.io/provisioner-deletion-secret-name: ''
-    volume.kubernetes.io/provisioner-deletion-secret-namespace: ''
-  finalizers:
-    - kubernetes.io/pv-protection
-  managedFields:
-    - manager: csi-provisioner
-      operation: Update
-      apiVersion: v1
-      time: '2024-10-30T05:21:53Z'
-      fieldsType: FieldsV1
-      fieldsV1:
-        f:metadata:
-          f:annotations:
-            .: {}
-            f:pv.kubernetes.io/provisioned-by: {}
-            f:volume.kubernetes.io/provisioner-deletion-secret-name: {}
-            f:volume.kubernetes.io/provisioner-deletion-secret-namespace: {}
-          f:finalizers: {}
-        f:spec:
-          f:accessModes: {}
-          f:capacity:
-            .: {}
-            f:storage: {}
-          f:claimRef:
-            .: {}
-            f:apiVersion: {}
-            f:kind: {}
-            f:name: {}
-            f:namespace: {}
-            f:resourceVersion: {}
-            f:uid: {}
-          f:csi:
-            .: {}
-            f:driver: {}
-            f:volumeAttributes:
-              .: {}
-              f:csi.storage.k8s.io/pv/name: {}
-              f:csi.storage.k8s.io/pvc/name: {}
-              f:csi.storage.k8s.io/pvc/namespace: {}
-              f:location: {}
-              f:secretnamespace: {}
-              f:skuName: {}
-              f:storage.kubernetes.io/csiProvisionerIdentity: {}
-            f:volumeHandle: {}
-          f:mountOptions: {}
-          f:persistentVolumeReclaimPolicy: {}
-          f:storageClassName: {}
-          f:volumeMode: {}
-    - manager: kube-controller-manager
-      operation: Update
-      apiVersion: v1
-      time: '2024-10-30T05:21:53Z'
-      fieldsType: FieldsV1
-      fieldsV1:
-        f:status:
-          f:phase: {}
-      subresource: status
+  name: pv82249961new
 spec:
   capacity:
     storage: 1Gi
-  csi:
-    driver: file.csi.azure.com
-    volumeHandle: >-
-      cepg-82249961-sa-std-aks-mc-rg#ff9d50ab63da04d06bf0721#pvc-0af37812-1045-450e-ab02-cbd7ec565fd6###82249961
-    volumeAttributes:
-      csi.storage.k8s.io/pv/name: pvc-0af37812-1045-450e-ab02-cbd7ec565fd6
-      csi.storage.k8s.io/pvc/name: prod-cepg-aa-std-pvc
-      csi.storage.k8s.io/pvc/namespace: '82249961'
-      location: koreacentral
-      secretnamespace: '82249961'
-      skuName: Standard_LRS
-      storage.kubernetes.io/csiProvisionerIdentity: 1729608735704-3063-file.csi.azure.com
   accessModes:
     - ReadWriteMany
-  claimRef:
-    kind: PersistentVolumeClaim
-    namespace: '82249961new'
-    name: prod-cepg-aa-std-pvc
-    uid: 0af37812-1045-450e-ab02-cbd7ec565fd6
-    apiVersion: v1
-    resourceVersion: '3341438'
   persistentVolumeReclaimPolicy: Retain
   storageClassName: cepg-aa-std-rwmany
   mountOptions:
     - dir_mode=0777
     - file_mode=0777
   volumeMode: Filesystem
-status:
-  phase: Bound
-  lastPhaseTransitionTime: '2024-10-30T05:21:53Z'

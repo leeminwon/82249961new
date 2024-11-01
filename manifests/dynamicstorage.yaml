@@ -3,10 +3,10 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: prod-cepg-aa-std-pvc
-  namespace: '82249961'
-  uid: 0af37812-1045-450e-ab02-cbd7ec565fd6
-  resourceVersion: '3341475'
-  creationTimestamp: '2024-10-30T05:21:52Z'
+  namespace: '82249961new'
+  #uid: 0af37812-1045-450e-ab02-cbd7ec565fd6
+  #resourceVersion: '3341475'
+  #creationTimestamp: '2024-10-30T05:21:52Z'
   labels:
     app.kubernetes.io/instance: a82249961
   annotations:

@@ -5,6 +5,7 @@ metadata:
 spec:
   csi:
     driver: file.csi.azure.com
+    volumeHandle: 82249961new
   capacity:
     storage: 1Gi
   accessModes:

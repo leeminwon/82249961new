@@ -1,12 +1,14 @@
-kind: PersistentVolumeClaim
-apiVersion: v1
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
 metadata:
-  name: prod-cepg-aa-std-pvc
-  namespace: 82249961new
-spec:
-  accessModes:
-    - ReadWriteMany
-  resources:
-    requests:
-      storage: 1Gi
-  storageClassName: cepg-aa-std-rwmany
+  name: cepg-aa-std-rwmany
+provisioner: file.csi.azure.com
+parameters:
+  skuName: Standard_LRS
+  location: koreacentral
+reclaimPolicy: Retain
+mountOptions:
+  - dir_mode=0777
+  - file_mode=0777
+allowVolumeExpansion: true
+volumeBindingMode: Immediate

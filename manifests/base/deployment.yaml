@@ -13,7 +13,7 @@ spec:
         app: 82249961new
     spec:
       containers:
-        - name: 82249961 
+        - name: 82249961new
           image: cepg82249961newacr.azurecr.io/82249961new
           ports:
           - containerPort: 8080

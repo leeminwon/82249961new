@@ -1,17 +1,17 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: pv82249961new
+  name: pv82249961
 spec:
   csi:
     driver: file.csi.azure.com
-    volumeHandle: 82249961new
+    volumeHandle: 82249961
   capacity:
     storage: 1Gi
   accessModes:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: cepg-aa-std-rwmany
+  storageClassName: ce-std-rwmany
   mountOptions:
     - dir_mode=0777
     - file_mode=0777

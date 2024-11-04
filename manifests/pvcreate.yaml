@@ -11,7 +11,7 @@ spec:
   accessModes:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: ce-std-rwmany
+  storageClassName: "cepg-aa-std-rwmany"
   mountOptions:
     - dir_mode=0777
     - file_mode=0777

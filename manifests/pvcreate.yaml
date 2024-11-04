@@ -1,5 +1,5 @@
 kind: PersistentVolume
-apiVersion: v11
+apiVersion: v1
 metadata:
   name: pv82249961
 spec:

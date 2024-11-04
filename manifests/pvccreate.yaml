@@ -1,7 +1,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: prod-cepg-aa-std-pvc
+  name: prod-ce-std-pvc
   namespace: 82249961
 spec:
   accessModes:
@@ -9,4 +9,4 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  storageClassName: cepg-aa-std-rwmany
+  storageClassName: cepg-std-rwmany

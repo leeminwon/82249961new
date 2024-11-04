@@ -14,3 +14,5 @@ namePrefix: prod-
 images:
 - name: cepg82249961newacr.azurecr.io/82249961
   newTag: "202411031400"
+- name: cepg82249961newacr.azurecr.io/82249961new
+  newTag: "202411040434"

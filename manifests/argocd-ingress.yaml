@@ -18,4 +18,4 @@ spec:
             name: argocd-server 
             port:
               name: http
-    host: argocd.cepg-82249961new-sa.kubepia.net
+    host: argocd.ce-82249961-sa.kubepia.net

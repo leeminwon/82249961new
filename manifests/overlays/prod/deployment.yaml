@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-        - name: 82249961
+        - name: "82249961"
           command: ["java","-jar","/app.jar"]
           args: ["--spring.config.location=file:/config/application.yml"]
           volumeMounts:
